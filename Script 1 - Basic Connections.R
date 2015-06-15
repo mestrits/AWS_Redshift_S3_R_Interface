@@ -1,4 +1,5 @@
-### BASIC CONNECTIVITY TESTING - R STUDIO (Windows Deployment) via RODBC/RPOSTGRESQL to Amazon Redshift
+### BASIC CONNECTIVITY TESTING - R STUDIO (Windows Deployment) 
+### via RODBC/RPOSTGRESQL to Amazon Redshift 
 ### Ryan Anderson - June 2015
 
 library(RPostgreSQL)  # uses DBI which was created by Hadley Wickham, so it must be good
@@ -7,7 +8,7 @@ library(RODBC) #
 #########################################################
 ##  Step 0 - Let's Get Connected! - R PostgreSQL       ## 
 #########################################################
-
+ # new text
 # get password (so it doesnt show up in public in my GitHub Code)
 password <- read.table(file="private.txt", header=FALSE) # where I'm holding pw outside public code , for now
 password <- paste(password[1,1],sep="")  # but masks my password in public code (probably better way for this - explore registry)
