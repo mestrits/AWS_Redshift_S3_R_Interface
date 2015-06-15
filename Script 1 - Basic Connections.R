@@ -1,6 +1,7 @@
 ### BASIC CONNECTIVITY TESTING - R STUDIO (Windows Deployment) 
 ### via RODBC/RPOSTGRESQL to Amazon Redshift 
 ### Ryan Anderson - June 2015
+### update test git
 
 library(RPostgreSQL)  # uses DBI which was created by Hadley Wickham, so it must be good
 library(RODBC) #
@@ -83,10 +84,14 @@ sqlColumns(con2, "iris_150")
 
 ## Clean up our toys - ODBC - drop table and close channel
 sqlDrop(con2, "iris_150", errors = FALSE) # clean up our toys
-odbcClose(con2) ## clean up our toys
+odbcClose(con2) ## cl ean up our toys
 
 
 #### WORKS TO HERE
+
+##### END OF CODE
+##### END OF CODE
+##### END OF CODE
 
 # Package consulted http://cran.r-project.org/web/packages/RPostgreSQL/RPostgreSQL.pdf 
 # and https://code.google.com/p/rpostgresql/ helpful and http://docs.aws.amazon.com/redshift/latest/dg/c_redshift-and-postgres-sql.html
