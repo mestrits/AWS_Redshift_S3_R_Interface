@@ -1,3 +1,5 @@
 .Rproj.user
+private.txt
 .Rhistory
+.gitignore
 .RData
